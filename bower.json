@@ -1,5 +1,5 @@
 {
-  "name": "The Developer Profile",
+  "name": "the-developer-profile",
   "authors": [
     "Gopal Saini <gopal.saini.work@gmail.com>"
   ],
@@ -18,5 +18,8 @@
     "client/bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
 }
