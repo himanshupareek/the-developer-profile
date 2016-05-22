@@ -1,0 +1,22 @@
+{
+  "name": "The Developer Profile",
+  "authors": [
+    "Gopal Saini <gopal.saini.work@gmail.com>"
+  ],
+  "description": "Developer's Website",
+  "main": "",
+  "keywords": [
+    "developer's",
+    "profile"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ]
+}
