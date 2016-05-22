@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/himanshupareek/the-developer-profile/issues"
   },
-  "homepage": "https://github.com/himanshupareek/the-developer-profile#readme"
+  "homepage": "https://github.com/himanshupareek/the-developer-profile#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
