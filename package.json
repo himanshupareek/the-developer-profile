@@ -1,0 +1,23 @@
+{
+  "name": "the-developer-profile",
+  "version": "1.0.0",
+  "description": "developer profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshupareek/the-developer-profile.git"
+  },
+  "keywords": [
+    "developer",
+    "profile"
+  ],
+  "author": "Gopal Saini, Himanshu Pareek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshupareek/the-developer-profile/issues"
+  },
+  "homepage": "https://github.com/himanshupareek/the-developer-profile#readme"
+}
