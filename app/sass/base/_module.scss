@@ -1,0 +1,23 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+header {
+  text-align: center;
+  background: #18bc9c;
+  color: white;
+  &.container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  img {
+  display: block;
+  margin: 0 auto 20px;
+}
+}
+
+ 
