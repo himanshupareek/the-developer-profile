@@ -11,7 +11,6 @@ gulp.task('sass', function () {
         .pipe(livereload());
 });
 
-gulp.task('')
 
 gulp.task('sass:watch', function () {
     livereload.listen();
