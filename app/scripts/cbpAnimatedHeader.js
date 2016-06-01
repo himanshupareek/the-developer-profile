@@ -8,33 +8,35 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
-var cbpAnimatedHeader = (function() {
+var cbpAnimatedHeader = (function () {
 
 	var docElem = document.documentElement,
-		header = document.querySelector( '.navbar-fixed-top' ),
+		header = document.querySelector('.navbar-fixed-top'),
 		didScroll = false,
 		changeHeaderOn = 300;
 
 	function init() {
-		window.addEventListener( 'scroll', function( event ) {
-			if( !didScroll ) {
+		window.addEventListener('scroll', function (event) {
+			if (!didScroll) {
 				didScroll = true;
-				setTimeout( scrollPage, 250 );
+				setTimeout(scrollPage, 250);
 			}
-		}, false );
+		}, false);
 	}
 
 	function scrollPage() {
-		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
-			classie.add( header, 'navbar-shrink' );
-            $('.scroll-top').removeClass('hidden-sm hidden-xs');
-            $('.scroll-top').fadeIn(500);
-            }
+		var sy = scrollY(),
+			$scrollTop = $('.scroll-top');
+			
+		if (sy >= changeHeaderOn) {
+			classie.add(header, 'navbar-shrink');
+            $scrollTop.removeClass('hidden-sm hidden-xs');
+            $scrollTop.fadeIn(500);
+		}
 		else {
-			classie.remove( header, 'navbar-shrink' );
-            $('.scroll-top').fadeOut(500,  function() {
-            $('.scroll-top').addClass('hidden-sm hidden-xs');
+			classie.remove(header, 'navbar-shrink');
+            $scrollTop.fadeOut(500, function () {
+				$scrollTop.addClass('hidden-sm hidden-xs');
             });
 
 		}
