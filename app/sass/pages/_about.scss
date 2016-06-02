@@ -13,11 +13,12 @@ section.success {
   color: $font-color;
 }
 
-section.success a,
-section.success a:hover,
-section.success a:focus,
-section.success a:active,
-section.success a.active {
-  color: $anchor-active-color;
-  outline: none;
+section.success a
+{
+  &:hover, &:focus, &:active
+  {
+    color: $anchor-active-color;
+    outline: none;
+  }
 }
+
