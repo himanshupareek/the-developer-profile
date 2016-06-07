@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 gulp.task('sass', function () {
     return gulp.src('./app/sass/**/*.scss')
-        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'expanded' , sourceComments: true}).on('error', sass.logError))
         .pipe(gulp.dest('./app/css'))
         .pipe(livereload());
 });
