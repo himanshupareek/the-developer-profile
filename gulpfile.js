@@ -11,9 +11,7 @@ gulp.task('sass', function () {
         .pipe(livereload());
 });
 
-gulp.task('')
-
-gulp.task('sass:watch', function () {
-    livereload.listen();
-    gulp.watch('./app/sass/**/*.scss', ['sass']);
+gulp.task('watch', function() {
+  livereload.listen();
+  gulp.watch('app/sass/*.scss', ['sass']);
 });
