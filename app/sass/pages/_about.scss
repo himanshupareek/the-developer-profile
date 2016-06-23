@@ -1,0 +1,24 @@
+$background-color: #18bc9c;
+$font-color: white;
+$anchor-active-color: #2c3e50;
+
+// @mixin border($properties , $value){
+//     @each $property in $properties{
+//         border-#{$property}: $value;
+//     }
+// }
+
+section.success {
+  background: $background-color;
+  color: $font-color;
+}
+
+section.success a
+{
+  &:hover, &:focus, &:active
+  {
+    color: $anchor-active-color;
+    outline: none;
+  }
+}
+
