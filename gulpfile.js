@@ -1,18 +1,17 @@
 'use strict';
 
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    livereload = require('gulp-livereload');
+    requireAll = require('require-all'),
+    tasks = requireAll(__dirname + '/gulp-tasks/'),
+	task;
 
-gulp.task('sass', function () {
-    return gulp.src('./app/sass/**/*.scss')
-        .pipe(sass({ outputStyle: 'expanded' , sourceComments: true}).on('error', sass.logError))
-        .pipe(gulp.dest('./app/css'))
-        .pipe(livereload());
-});
+for (task in tasks) {
+	if (typeof tasks[task] === 'function') {
+		gulp.task(task, tasks[task](gulp, plugins, config));
+	}
+}
 
 
-gulp.task('sass:watch', function () {
-    livereload.listen();
-    gulp.watch('./app/sass/**/*.scss', ['sass']);
+gulp.task('default', ['browser-sync', 'sass'], function(callback) {
+
 });
