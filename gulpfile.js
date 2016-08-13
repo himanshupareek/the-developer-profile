@@ -11,6 +11,10 @@ for (task in tasks) {
 	}
 }
 
-gulp.task('default', ['browser-sync', 'sass'], function(callback) {
+gulp.task('default', ['browser-sync', 'sass', 'scss-lint'], function(callback) {
+	console.info('Build is running on port : 9000');
+});
 
+gulp.task('build', ['html-min'], function(callback) {
+	console.info('Build is completed.');
 });

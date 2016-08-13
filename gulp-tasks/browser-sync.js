@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
@@ -16,6 +18,5 @@ gulp.task('browser-sync', function() {
         }
     });
 
-    gulp.watch("./app/scss/**/*.scss", ['sass']);
     gulp.watch("./app/*.html").on('change', browserSync.reload);
 });

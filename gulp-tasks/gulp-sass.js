@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 gulp.task('sass', function () {
     return gulp.src('./app/scss/**/*.scss')
-        .pipe(sass({ outputStyle: 'expanded' , sourceComments: true})
+        .pipe(sass({ outputStyle: 'expanded' , sourceComments: false})
         .on('error', sass.logError))
         .pipe(gulp.dest('./app/css'))
         .pipe(browserSync.stream({match: '**/*.css'}));
