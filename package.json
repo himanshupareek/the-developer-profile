@@ -21,11 +21,13 @@
   },
   "homepage": "https://github.com/himanshupareek/the-developer-profile#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
     "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^2.0.0",
     "gulp-load-plugins": "^1.2.4",
-    "require-all": "1.1.0",
     "gulp-sass": "^2.3.1",
-    "gulp-util": "^3.0.7"
+    "gulp-scss-lint": "0.3.9",
+    "gulp-util": "^3.0.7",
+    "require-all": "1.1.0"
   }
 }
